@@ -99,7 +99,7 @@ def web3():
     return Web3(provider)
 
 
-@pytest.fixture(scope="module")
+@pytest.fixture
 def w3_strict_abi():
     w3 = Web3(EthereumTesterProvider())
     w3.enable_strict_bytes_type_checking()
